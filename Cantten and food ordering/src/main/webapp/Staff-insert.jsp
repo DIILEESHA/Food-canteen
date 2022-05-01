@@ -15,9 +15,8 @@ body {
 	font-family: "Lucida Console", "Courier New", monospace;
 	font-size: 45px;
 	color: white;
-	width:100%
+	width: 100%
 }
-
 
 .well {
 	background-color: white;
@@ -54,7 +53,7 @@ body {
 
 <input type="hidden" id="status"
 	value="<%=request.getAttribute("status")%>">
-<body>
+<body style="overflow-x:hidden">
 
 
 	<header>
@@ -63,13 +62,23 @@ body {
 		</div>
 
 
-		<img
-			style="position:absolute;width:100vw;height:100vh;opacity: 1""		
-			src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?cs=srgb&dl=pexels-igor-starkov-914388.jpg&fm=jpg"
+		<img style="position: absolute; width: 100vw; height: 105vh"
+			src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg"
+			alt="..." /> 
+			<img
+			style="position: absolute; width: 30vw; height: 65vh;margin-left:890px;margin-top:100px"
+			src="https://th.bing.com/th/id/R.530dece00d782679cc410a81952724d6?rik=MWoW7flgcTWWwA&riu=http%3a%2f%2fwww.hesleygroup.co.uk%2ffiles%2fmyimages%2fstaff.png&ehk=m3Yhn4VgC4BsV6cjX0PbD5tc%2fZ7TSQ9yj%2bhmgE3JUu8%3d&risl=&pid=ImgRaw&r=0"
 			alt="..." />
+			
+			<img
+			style="position: absolute; width: 50vw; height: 85vh;margin-left:790px;margin-top:20px"
+			src="https://www.jing.fm/clipimg/full/407-4071340_employee-clipart-staffing-restaurant-staffing-clip-art.png"
+			alt="..." />
+		
+			
 
 	</header>
-	<br/>
+
 
 	<div class="bg2">
 
@@ -77,18 +86,19 @@ body {
 		<div style="width: 1200px; heigth: 500px; margin-left: -390px"
 			class="containerme">
 
-			<div style="background-color:rgba(0,0,0,0.5); margin-left: -39px"
+			<div style="background-color: rgba(0, 0, 0, 0.6); margin-left: -39px"
 				class="col-lg-8 well">
-				<div  class="tit">
-					<h2 style="text-align: center;
-	font-family: "Lucida Console", "Courier New", monospace;
+				<div class="tit">
+					<h2 style="text-align: center; font-family:" Lucida
+						Console", "Courier New", monospace;
 	font-size: 2x;
-	color: white" class="dtr" align="center">ADD STAFF MEMBERS</h2>
+	color:
+						white" class="dtr" align="center">ADD STAFF MEMBERS</h2>
 				</div>
 
-				<div style="background-color: rgba(0, 0, 0, 0.6);" class="card">
+				<div style="background-color: rgba(0, 0, 0, 0.1);" class="card">
 					<div
-						style="background-color: ; font-size: 18px; border-radius: 0px;"
+						style="background-color:; font-size: 18px; border-radius: 0px;"
 						class="card-body">
 
 
@@ -125,7 +135,15 @@ body {
 								name="name" required="required ">
 						</fieldset>
 
-						
+						<fieldset class="form-group">
+							<label
+								style="color: white; font-family: 'Oswald', sans-serif; font-weight: bold">Email</label>
+							<input type="text" placeholder="Type Member Name Here"
+								value="<c:out value='${staff.email}' />" class="form-control"
+								name="email" required="required ">
+						</fieldset>
+
+
 
 						<fieldset class="form-group">
 							<label
@@ -148,8 +166,8 @@ body {
 						<fieldset class="form-group">
 							<label
 								style="color: white; font-family: 'Oswald', sans-serif; font-weight: bold">Type
-								Of Work</label> <select placeholder="SELECT WORK TYPE"
-								name="typeOfWork" class="form-control"
+								Of Work</label> <select placeholder="SELECT WORK TYPE" name="typeOfWork"
+								class="form-control"
 								value="<c:out value='${staff.typeOfWork}'/>">
 
 								<option>Waitor</option>
@@ -163,20 +181,20 @@ body {
 
 
 						<button
-							style="letter-spacing: 1px; width: 140px; font-weight: bold; color: white;margin:0px 5px"
-							type="submit" class="btn btn-info">Add</button>
+							style="letter-spacing: 0px; width: 140px; font-weight: bold; color: white; margin: 0px 5px"
+							type="submit" class="btn btn-info">ADD</button>
 						<a href="index.jsp">
 							<button
-								style="letter-spacing: 1px; width: 140px; font-weight: bold; color: white"
-								type="button" style="margin-right:40px" "  class="btn btn-info">Back</button>
+								style="letter-spacing: 0px; width: 140px; font-weight: bold; color: white"
+								type="button" style="margin-right:40px" "  class="btn btn-info">BACK</button>
 						</a>
 
-						<ul style="width: 250px; margin-left: 580px; margin-top: -41px"
+						<ul style="width: 250px; margin-left: 554px; margin-top: -41px;font-weight:bold"
 							class="navbar-nav">
 							<li><a href="<%=request.getContextPath()%>/list"
-								class="btn btn-danger" class="nav-link">View All Members</a></li>
+								class="btn btn-danger" class="nav-link">VIEW ALL MEMBERS</a></li>
 						</ul>
-						
+
 
 						</form>
 

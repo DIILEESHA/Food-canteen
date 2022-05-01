@@ -5,16 +5,17 @@
 <head>
 <style type="text/css">
 body {
-	background: url("iamges/login.png");
+	
 }
 
 .headert {
-	background-color: teal;
-	padding: 0px;
+	background-color: #2C3E50;
+	padding: 25px;
 	text-align: center;
 	font-family: "Lucida Console", "Courier New", monospace;
-	font-size: 55px;
+	font-size: 45px;
 	color: white;
+	width: 100%
 }
 
 .well {
@@ -26,7 +27,8 @@ body {
 .dtr {
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 25px;
+	color:white
 }
 </style>
 <title>FOOD MASTER</title>
@@ -54,31 +56,50 @@ body {
 
 
 	<header>
-		<div class="headert">food master</div>
+		<div class="headert">
+			<h1>FOOD MASTERY</h1>
+		</div>
 
 
 		<img
-			style="border-radius: 0px; position: absolute; width: 100%; height: 100vh; background-color: #222"
+			style="border-radius: 0px; position: absolute; width: 100%; height: 60vh; background-color: #222"
 			class="img-fluid"
 			src="https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-844297.jpg&fm=jpg"
+			alt="..." /><img style="position: absolute; width: 100vw; height: 105vh"
+			src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg"
+			alt="..." /> 
+			<img
+			style="position: absolute; width: 30vw; height: 65vh;margin-left:890px;margin-top:100px"
+			src="https://th.bing.com/th/id/R.530dece00d782679cc410a81952724d6?rik=MWoW7flgcTWWwA&riu=http%3a%2f%2fwww.hesleygroup.co.uk%2ffiles%2fmyimages%2fstaff.png&ehk=m3Yhn4VgC4BsV6cjX0PbD5tc%2fZ7TSQ9yj%2bhmgE3JUu8%3d&risl=&pid=ImgRaw&r=0"
 			alt="..." />
+			
+			<img
+			style="position: absolute; width: 50vw; height: 85vh;margin-left:790px;margin-top:20px"
+			src="https://www.jing.fm/clipimg/full/407-4071340_employee-clipart-staffing-restaurant-staffing-clip-art.png"
+			alt="..." />
+		
 
 	</header>
 
 	<div class="bg2">
 
 		<br>
-		<div style="width: 1200px; heigth: 500px; margin-left: -350px"
+		<div style="width: 1200px; heigth: 500px; margin-left: -390px"
 			class="containerme">
 
-			<div class="col-lg-7 well">
-				<div style="background-color: white" class="tit">
-					<h2 class="dtr" align="center">Update Staff Member</h2>
+			<div style="background-color: rgba(0, 0, 0, 0.6); margin-left: -39px"
+				class="col-lg-8 well">
+				<div class="tit">
+					<h2 style="text-align: center; font-family:" Lucida
+						Console", "Courier New", monospace;
+	font-size: 2x;
+	color:
+						white" class="dtr" align="center">UPDATE STAFF MEMBERS</h2>
 				</div>
 
-				<div style="background-color: rgba(0, 0, 0, 0.5);" class="card">
+				<div style="background-color: rgba(0, 0, 0, 0.1);" class="card">
 					<div
-						style="background-color: rgba(0, 0, 0, 0.5); font-size: 18px; border-radius: 0px;"
+						style="background-color:; font-size: 18px; border-radius: 0px;"
 						class="card-body">
 
 
@@ -145,13 +166,17 @@ body {
 
 
 
-						<button type="submit" class="btn btn-info">UPDATE</button>
-						<button type="reset" class="btn btn-info">CANCEL</button>
+						<button style="letter-spacing: 1px; width: 140px; font-weight: bold; color: white; margin: 0px 5px" type="submit" class="btn btn-info">UPDATE</button>
+						<a href="Staff-list.jsp">
+						<button
+							style="letter-spacing: 1px; width: 140px; font-weight: bold; color: white; margin: 0px 5px"
+							type="reset" class="btn btn-info">CANCEL</button>
+						</a>
 
-						<ul style="margin-left: 400px; margin-top: -35px"
+						<ul style="width: 250px; margin-left: 580px; margin-top: -41px"
 							class="navbar-nav">
 							<li><a href="<%=request.getContextPath()%>/list"
-								class="btn btn-danger" class="nav-link">View All Stocks</a></li>
+								class="btn btn-danger" class="nav-link">View All Members</a></li>
 						</ul>
 
 						</form>
@@ -165,39 +190,7 @@ body {
 			</div>
 
 		</div>
-		<footer style="width: 100%; margin-top: 90vh"
-			class="footer text-center">
-			<div style="width: 100%" class="container">
-				<div style="width: 100%" class="row">
-					<!-- Footer Location-->
-					<div class="col-lg-4 mb-5 mb-lg-0">
-						<h4 class="text-uppercase mb-4">Location</h4>
-						<p class="lead mb-0">
-							Colombo <br /> MO 65243
-						</p>
-					</div>
-					<!-- Footer Social Icons-->
-					<div class="col-lg-4 mb-5 mb-lg-0">
-						<h4 class="text-uppercase mb-4">Around the Web</h4>
-						<a class="btn btn-outline-light btn-social mx-1" href="#!"><i
-							class="fab fa-fw fa-facebook-f"></i></a> <a
-							class="btn btn-outline-light btn-social mx-1" href="#!"><i
-							class="fab fa-fw fa-twitter"></i></a> <a
-							class="btn btn-outline-light btn-social mx-1" href="#!"><i
-							class="fab fa-fw fa-linkedin-in"></i></a> <a
-							class="btn btn-outline-light btn-social mx-1" href="#!"><i
-							class="fab fa-fw fa-dribbble"></i></a>
-					</div>
-					<!-- Footer About Text-->
-					<div class="col-lg-4">
-						<h4 class="text-uppercase mb-4">About Food Master</h4>
-						<p class="lead mb-0">
-							Come Again And join us our FB page</br>Thanks!
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+		
 	</div>
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>

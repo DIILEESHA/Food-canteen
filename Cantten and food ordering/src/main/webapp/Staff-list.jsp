@@ -51,14 +51,24 @@
 	<header>
 
 		<div class="header">
-			<h1>FOOD MASTER</h1>
+			<h1>FOOD MASTERY</h1>
 		</div>
 
 		<img
-			style="border-radius: 0px; position: absolute; width: 100%; height: 100vh; background-color: #222"
+			style="border-radius: 0px; position: absolute; width: 100%; height: 90vh; background-color: #222"
 			class="img-fluid"
-			src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?cs=srgb&dl=pexels-igor-starkov-914388.jpg&fm=jpg"
+			src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-733857.jpg&fm=jpg"
 			alt="..." />
+			<img
+			style="position: absolute; width: 30vw; height: 65vh;margin-left:890px;margin-top:100px"
+			src="https://th.bing.com/th/id/R.530dece00d782679cc410a81952724d6?rik=MWoW7flgcTWWwA&riu=http%3a%2f%2fwww.hesleygroup.co.uk%2ffiles%2fmyimages%2fstaff.png&ehk=m3Yhn4VgC4BsV6cjX0PbD5tc%2fZ7TSQ9yj%2bhmgE3JUu8%3d&risl=&pid=ImgRaw&r=0"
+			alt="..." />
+			
+			<img
+			style="position: absolute; width: 50vw; height: 85vh;margin-left:790px;margin-top:20px"
+			src="https://www.jing.fm/clipimg/full/407-4071340_employee-clipart-staffing-restaurant-staffing-clip-art.png"
+			alt="..." />
+			
 	</header>
 
 	<div class="bg">
@@ -113,10 +123,10 @@
 												<td>
 													<div class="btn-group">
 														<label class="p-0 mr-1 my-0"> <a
-															href="edit?id=<c:out value='${staff.id}' />"><button style="width:
+															href="edit?id=<c:out value='${staff.id}' />"><button style="width:80px"
 																	type="submit" class="btn btn-primary">Edit</button></a>
 														</label> <label class="p-0 my-0"> <a
-															href="delete?id=<c:out value='${staff.id}' />"><button
+															href="delete?id=<c:out value='${staff.id}' />"><button  style="width:80px"
 																	type="submit" class="btn btn-danger" value="delete"
 																	onclick="return confirm('Are you sure you want to delete?')">Delete</button></label>
 													</div>

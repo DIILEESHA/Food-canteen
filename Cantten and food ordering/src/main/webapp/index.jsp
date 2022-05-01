@@ -105,6 +105,9 @@ if (session.getAttribute("name") == null) {
 				</div>
 				<div class="divider-custom-line"></div>
 			</div>
+			
+			
+			
 			<!-- Portfolio Grid Items-->
 			<div class="row justify-content-center">
 				<!-- Portfolio Item 1-->
@@ -179,7 +182,7 @@ if (session.getAttribute("name") == null) {
 							href="">
 							<button
 								style="border: none; background-color: teal; color: white; margin-top: 20px; margin-left: 5px; width: 340px; height: 40px"
-								class="btn-me">ADD ACCOUNT DETAILS</button>
+								class="btn-me">ADD INVENTORY DETAILS</button>
 						</a>
 
 
@@ -215,7 +218,7 @@ if (session.getAttribute("name") == null) {
 							href="">
 							<button
 								style="border: none; background-color: teal; color: white; margin-top: 20px; margin-left: 5px; width: 340px; height: 40px"
-								class="btn-me">ADD ACCOUNT DETAILS</button>
+								class="btn-me">ADD SUPPLIER DETAILS</button>
 						</a>
 
 					</div>
